@@ -34,3 +34,14 @@ function calculate(){
         }
     }
 }
+if(window.innerWidth<700){
+    document.getElementsByClassName('container')[0].style.display="none";
+}
+window.addEventListener('resize',()=>{
+    if(window.innerWidth<700){
+        document.getElementsByClassName('container')[0].style.display="none";
+    }
+    else{
+        document.getElementsByClassName('container')[0].style.display="block";
+    }
+});
