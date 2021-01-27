@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Design</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h4>Pay Calculator</h4>
+        <div class="display-section">
+            <div class="form">
+                <form action="#" onsubmit="calculate()" method="GET">
+                    <div class="emp-name-section">
+                        <label for="name">Employee Name</label>
+                        <input type="text" placeholder="Enter Employee Name" id="name" class="emp-name">
+                    </div>
+                    <div class="emp-id-section">
+                        <label for="id">Employee ID</label>
+                        <input type="text" placeholder="Enter Employee ID" id="id" class="emp-id">
+                    </div>
+                    <div class="emp-dob-section">
+                        <label for="dob">Date Of Birth</label>
+                        <input type="date" title="Date of Birth" id="dob" class="date-of-birth">
+                    </div>
+                    <div class="emp-doj-section">
+                        <label for="doj">Date Of Joining</label>
+                        <input type="date" title="Date of Joining" id="doj" class="date-of-join">
+                    </div>
+                    <div class="basic-pay-section">
+                        <label for="basic">Basic Pay</label>
+                       <input type="number" class="basic-pay" id="basic" value="10000" step="0.01" min="10000.00" max="200000.00">
+                    </div>
+                    <input type="submit" class="calculate-value" value="Calculate">
+                </form>
+            </div>
+            <div class="calculation">
+                <div class="emp-details-pay">
+                    <div class="emp-details">
+                        <div class="emp-id-details">
+                            <h1>Employee ID </h1>
+                            <h2>---</h2>
+                        </div>
+                        <div class="name-details">
+                            <h1>Employee Name</h1>
+                            <h2>----</h2>
+                        </div>
+                    </div>
+                    <div class="net-gross-pay">
+                        <div class="net-pay">
+                            <h1>Net Pay</h1>
+                            <h2>0</h2>
+                        </div>
+                        <div class="gross-pay">
+                            <h1>Gross Pay</h1>
+                            <h2>0</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3><sup>&copy;</sup> Copyrighted by AJAI J A &trade;</h3>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

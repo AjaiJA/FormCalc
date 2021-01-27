@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}.container{
+    width:90%;
+    margin: auto;
+    overflow: hidden;
+}h4{
+    line-height: 80px;
+    text-align: center;
+    font-size: 23px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-weight:lighter;
+}.display-section{
+    height:70vh;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(0, 255, 106);
+    border-radius: 7px;
+}.form{
+    padding:60px 10px 10px 10px;
+}form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}form label{
+    font-weight: lighter; 
+    width: 120px; 
+    font-family:'Courier New', Courier, monospace Arial, sans-serif;
+}form div{
+    margin-bottom:20px;
+}form input{
+    padding-left:8px;
+    height:30px;
+    width:200px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}form input::placeholder{
+    font-weight: bolder;
+    color:rgba(0, 128, 0, 0.363);
+    padding-left:8px;
+}[type="number"]{
+    cursor: pointer;
+}[type="submit"]{
+    position: relative;
+    left:30%;
+    margin-top: 15px;
+    width:40%;
+    height:35px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(252, 252, 252);
+    cursor: pointer;
+}[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.836);
+}[type="submit"]:focus{
+    border:none;
+}input:focus{
+    border:2px solid rgba(9, 148, 241, 0.788); 
+}.calculation{
+    margin:10px;
+    width: 98%;
+    border-radius: 5px;
+    background: rgb(253, 253, 253);
+}.calculation h1{
+    text-align: center;
+    padding-top: 23px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(173, 173, 173);
+}.emp-details{
+    margin-top: 70px;
+}.emp-details,.net-gross-pay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}.emp-details div,.net-gross-pay div{
+    height:17vh;
+    cursor: pointer;
+    margin:15px;
+    width:40%;
+    margin: auto;
+    box-shadow: 0 1px 8px 2px rgb(230, 227, 227);
+    transition: all 0.3s ease;
+}.emp-details div:hover,.net-gross-pay div:hover{
+    transform: scale(1.1);
+}.emp-details div h2{
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}.net-pay h2,.gross-pay h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}footer{
+    position: relative;
+    bottom:-74px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
